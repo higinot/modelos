@@ -63,6 +63,10 @@ div #info {
     letter-spacing: normal;
 }
 
+div #add {
+    margin-top: 20px;
+}
+
 .image-person {
     max-width:50%;
     border-radius: 100%;
@@ -121,4 +125,18 @@ button {
     border: none;
     margin-left: 20px;
 
+}
+
+form {
+    text-align:left;
+
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+}
+
+form textarea {
+    width: 100%;
 }
