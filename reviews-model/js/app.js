@@ -71,9 +71,6 @@ btnRight.addEventListener("click", () => {
   nome.textContent = reviews[index].name;
   job.textContent = reviews[index].job;
   info.textContent = reviews[index].msg;
-  const string = reviews[index].image;
-  console.log(string);
-  image.src = string;
 });
 
 btnLeft.addEventListener("click", () => {
@@ -83,7 +80,6 @@ btnLeft.addEventListener("click", () => {
   nome.textContent = reviews[index].name;
   job.textContent = reviews[index].job;
   info.textContent = reviews[index].msg;
-  image.removeAttribute("src");
 });
 
 btnCadastrar.addEventListener("click", () => {

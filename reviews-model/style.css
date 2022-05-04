@@ -36,6 +36,7 @@ body {
 
 .container {
     max-width: 650px;
+    height: 700px;
     margin: 100px auto;
     padding: 20px;
     background-color: var(--background-text);
@@ -48,7 +49,8 @@ body {
 }
 
 div #name {
-    margin-top: 25px;
+    margin-top: 25px auto;
+    width:100%;
     font-weight: 900;
     font-variant: small-caps;
 }
@@ -56,11 +58,13 @@ div #name {
 div #job {
     color: var(--lighting-color);
     font-variant: small-caps;
+    width: 100%;
 
 }
 
 div #info {
     letter-spacing: normal;
+    height: 200px;
 }
 
 div #add {
@@ -83,7 +87,7 @@ button {
     color: var(--background-text);
     font-size: 1em;
     font-weight: bolder;
-    letter-spacing: 1.5px;   
+    letter-spacing: 1.5px;
 
 }
 
