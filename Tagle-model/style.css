@@ -7,47 +7,96 @@
   --background-image: rgba(242, 117, 46, 1);
   --background: #000000;
 
-  --font-h1: 'Anton', sans-serif;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=League+Gothic&family=Pacifico&display=swap");
-
-ul li {
-  list-style: none;
-  text-decoration: none;
-  color: azure;
-}
-
-h1 {
-    font-family: var(--font-h1);
+  --font-h1: "Anton", sans-serif;
 }
 
 * {
-  box-sizing: border-box;
-  outline: 0;
-  margin: 0;
-  padding: 0;
-}
+    outline: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
 
-.nav {
+nav {
   background: var(--background);
   color: var(--font-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 9vh;
   align-items: center;
 }
 
-.links {
-    width: 40%;
-    box-sizing: none;
+ul li{
+  list-style: none;
+  text-decoration: none;
 }
 
-.links ul{
-    display: flex;
-    margin: 10px
-};
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--font-h1);
+}
 
-.links ul li {
-    margin: 10px;
+h1 {
+  font-family: var(--font-h1);
+}
+
+
+.nav {
+    display: flex;
+    margin-left: 10px;
+}
+
+.nav a {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+#bars {
+    display: none;
+
+}
+
+.btn {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav {
+        background-color: red;
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    #bars {
+        display: block;
+        margin-right: 40px;
+        font-size: 30px;
+    }
+
+    .btn {
+        display: inline;
+        border: none;
+        background-color: transparent;
+    }
+
+    i {
+        color: white;
+    }
+    .logo {
+        margin-left: 40px;
+    }
+    
 }
