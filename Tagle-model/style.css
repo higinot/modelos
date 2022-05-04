@@ -1,0 +1,53 @@
+:root {
+  --primary-color: rgba(11, 71, 191, 1);
+  --secondary-color: rgba(41, 82, 165, 1);
+  --lighting-color: rgb(60, 128, 255);
+  --darkness-color: rgb(142, 149, 168);
+  --font-color: rgb(247, 247, 247);
+  --background-image: rgba(242, 117, 46, 1);
+  --background: #000000;
+
+  --font-h1: 'Anton', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=League+Gothic&family=Pacifico&display=swap");
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+  color: azure;
+}
+
+h1 {
+    font-family: var(--font-h1);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background: var(--background);
+  color: var(--font-color);
+  display: flex;
+  justify-content: space-around;
+  height: 9vh;
+  align-items: center;
+}
+
+.links {
+    width: 40%;
+    box-sizing: none;
+}
+
+.links ul{
+    display: flex;
+    margin: 10px
+};
+
+.links ul li {
+    margin: 10px;
+}
