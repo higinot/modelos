@@ -1,3 +1,8 @@
+/* 
+==============
+SET PADRÃO
+==============
+*/
 :root {
   --primary-color: rgba(11, 71, 191, 1);
   --secondary-color: rgba(41, 82, 165, 1);
@@ -11,92 +16,124 @@
 }
 
 * {
-    outline: 0;
-    margin: 0;
-    padding: 0;
-  }
-  
-
-nav {
-  background: var(--background);
-  color: var(--font-color);
-  display: flex;
-  justify-content: space-evenly;
-  height: 9vh;
-  align-items: center;
+  outline: 0;
+  margin: 0;
+  padding: 0;
 }
 
-ul li{
+ul li {
   list-style: none;
   text-decoration: none;
 }
 
-a {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: var(--font-h1);
-}
+/* 
+==================
+NAV - ELEMENTO PAI
+==================
+*/
 
-h1 {
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--background);
+  color: var(--font-color);
+  height: 9vh;
+  align-items: center;
   font-family: var(--font-h1);
 }
 
-
-.nav {
-    display: flex;
-    margin-left: 10px;
+nav .logo {
+  font-size: 40px;
+  letter-spacing: 2px;
+  float: left;
+  margin-left: 20px;
 }
 
-.nav a {
-    margin-left: 40px;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+  float: left;
+}
+
+nav li a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* 
+==================
+TOOGLE BAR
+==================
+*/
+
+button {
+  display: none;
+  border: transparent;
+  background-color: transparent;
+  color: white;
+}
+
+button #bars {
+  font-size: 30px;
+}
+
+/* 
+==================
+NAV-LIST
+==================
+*/
+
+.nav-list {
+  display: none;
+}
+
+/* 
+==================
+RESPONSIVE
+==================
+*/
+
+@media screen and (max-width: 700px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: none;
+    text-align: right;
+    width: 100%;
+    opacity: 0.3;
+    background-color: var(--background);
+    font-family: var(--font-h1);
+  }
+
+  .active {
+    display: block;
+  }
+
+  .nav-list li {
+    margin-bottom: 20px;
+  }
+
+  .nav-list a {
+    font-size: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 1;
+    margin-right: 30px;
+    margin-top: 20px;
+
+  }
+
+  button {
+    display: inline;
     margin-right: 20px;
-}
+  }
 
-.logo {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 24px;
-    margin-left: 10px;
-}
-
-#bars {
+  nav ul {
     display: none;
-
-}
-
-.btn {
-    display: none;
-}
-
-@media screen and (max-width: 800px) {
-
-    .nav {
-        background-color: red;
-        display: none;
-    }
-
-    nav {
-        justify-content: space-between;
-    }
-
-    #bars {
-        display: block;
-        margin-right: 40px;
-        font-size: 30px;
-    }
-
-    .btn {
-        display: inline;
-        border: none;
-        background-color: transparent;
-    }
-
-    i {
-        color: white;
-    }
-    .logo {
-        margin-left: 40px;
-    }
-    
+  }
 }
